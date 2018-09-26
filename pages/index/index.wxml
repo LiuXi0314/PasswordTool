@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="hori">
+
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取用户数据 </button>
+
+    <block wx:else>
+
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+
+    </block>
+
+  </view>
+
+  <view class="main">
+
+    <view>
+      <input id="account" class='input-info' placeholder='请输入账号'></input>
+    </view>
+
+    <view>
+      <input id="pwd" class='input-info' placeholder='请输入密码'></input>
+    </view>
+
+    <view>
+      <input id="remark" class='input-info' placeholder='请输入备注'></input>
+    </view>
+
+  </view>
+  <view class='hori-top'>
+
+    <icon type='success' size='50' bindtap='save' />
+
+    <icon type='clear' size='50' bindtap='clear'/>
+
+  </view>
+</view>

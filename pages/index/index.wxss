@@ -1,0 +1,42 @@
+/**index.wxss**/
+
+.hori {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hori-top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80rpx;
+  width: 500rpx;
+  justify-content: space-evenly;
+}
+
+.userinfo-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: black;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.input-info {
+  width: 500rpx;
+  height: 80rpx;
+  margin-top: 30rpx;
+  border: 1px solid #aaa;
+  text-align: center;
+  border-radius: 88rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
